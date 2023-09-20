@@ -5,6 +5,7 @@ import { useStoryById } from "@/hooks";
 import Seo from "@/components/shared/Seo";
 import { useEffect } from "react";
 import { storyApi } from "@/api-client";
+import axios from "axios";
 
 const StoryPage = ({ data }) => {
   const router = useRouter();
@@ -89,7 +90,9 @@ export const getServerSideProps = async (context) => {
   const storyId = context.query.storyId;
   const currentPage = context.query.page ? Number(context.query.page) : 1;
 
-  const data = await storyApi.get(storyId, { page: currentPage });
+  const data = await axios.get(
+    `https://api-story.truyenfun.vn/story/${storyId}`
+  );
 
   return { props: { data: data.data } };
 };

@@ -20,6 +20,7 @@
     "axios": "^1.4.0",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.4",
+    "express": "^4.18.2",
     "next": "^12.3.2",
     "next-sitemap": "^1.6.133",
     "react": "18.2.0",

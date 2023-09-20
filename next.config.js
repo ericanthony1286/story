@@ -25,8 +25,12 @@ const nextConfig = {
     ],
     minimumCacheTTL: 1500000,
     unoptimized: true,
+    exportPathMap: function () {
+      return {
+        "/": { page: "/" },
+      };
+    },
   },
-
 };
 
 module.exports = nextConfig;

@@ -1,0 +1,16 @@
+.form__container {
+  & input {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    outline: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  & .link {
+    color: blue;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

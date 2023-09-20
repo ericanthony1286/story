@@ -1,0 +1,64 @@
+@import "../../styles/responsive.scss";
+.light__theme {
+  .wrapper {
+    display: flex;
+    border-bottom: 1px solid rgba(37, 150, 190, 0.3);
+  }
+  .section__title {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 1px;
+    border-bottom: 2px solid #2596be;
+    @include mobile {
+      border-bottom: none;
+    }
+    & h4 {
+      text-transform: uppercase;
+      color: var(--color-title-primary);
+      font-size: 20px;
+    }
+  }
+
+  .category {
+    display: flex;
+    gap: 1rem;
+    margin-left: 5px;
+    margin-top: 10px;
+    & span {
+      display: inline-block;
+      font-size: 16px;
+      // font-weight: bold;
+      text-align: center;
+      color: #001865;
+      background-color: rgba(221, 240, 252);
+      width: fit-content;
+      padding: 5px 12px;
+      border-radius: 2px;
+      margin-bottom: 5px;
+      cursor: pointer;
+      transition: 0.1s;
+      @media (max-width: 600px) {
+        font-size: 10px;
+      }
+      &:hover {
+        scale: 1.1;
+      }
+      @media (min-width: 600px) and (max-width: 899px) {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.dark__theme {
+  @extend .light__theme;
+  .section__title h4 {
+    color: var(--color-secondary);
+  }
+
+  .category span {
+    color: #fff;
+    background-color: rgba(1, 35, 101);
+  }
+}

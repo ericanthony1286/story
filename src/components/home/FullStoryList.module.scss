@@ -1,0 +1,13 @@
+.light__theme {
+  background: var(--light-section-bg-color);
+}
+.dark__theme {
+  background: var(--dark-section-bg-color);
+  & h4 {
+    color: var(--color-secondary);
+  }
+}
+.wrapper {
+  display: flex;
+  border-bottom: 1px solid rgba(37, 150, 190, 0.3);
+}

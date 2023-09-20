@@ -1,0 +1,74 @@
+:root {
+  --light-header-bg-color: #001865;
+  // --dark-header-bg-color: #242f39;
+  --dark-header-bg-color: #01023e;
+
+  --light-footer-bg-color: #e3e9f6;
+  // --dark-footer-bg-color: #242f39;
+  --dark-footer-bg-color: #000924;
+
+  --light-section-bg-color: #f6f8fc;
+  // --dark-section-bg-color: #232323;
+  --dark-section-bg-color: #01023e;
+
+  --light-page-bg-color: #f6f8fc;
+
+  --color-title-primary: #001865;
+  --color-third: #01a7ff;
+  --color-primary: #4e4e4e;
+  --color-secondary: #fff;
+  --color-blue: #c4d3f3;
+}
+
+$mobile-width: 600px;
+$tablet-width: 768px;
+$desktop-width: 900px;
+@mixin mobile {
+  @media (max-width: #{$mobile-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  @media (max-width: 767px) {
+    overflow-x: hidden;
+  }
+}
+body {
+  font-family: "Verdana";
+  // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  @media (max-width: 767px) {
+    overflow-x: hidden;
+  }
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+img {
+  width: 100%;
+  height: auto;
+}

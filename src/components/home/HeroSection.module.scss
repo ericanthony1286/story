@@ -1,0 +1,108 @@
+@import "/src/styles/responsive.scss";
+.section {
+  background-image: url(../../static/images/home/slide-background.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: fit-content;
+}
+.box {
+  overflow: hidden;
+  height: 280px;
+  @media (max-width: 600px) {
+    // height: 320px;
+  }
+
+  // .slick-slider {
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   width: unset;
+  //   height: unset;
+  // }
+}
+
+.container {
+  width: 100%;
+  margin-top: 0 !important;
+  @media (max-width: 600px) {
+    // margin-top: 1rem;
+  }
+  @include tablet {
+    // margin-top: 4rem;
+  }
+}
+
+.banner__wrapper {
+  margin: 0 8px;
+  background: #fff;
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  // background: url(../../static/images/banner_bg.jpeg) no-repeat right top;
+}
+.banner__content {
+  flex: 2;
+  padding: 16px 8px 0 16px;
+  position: relative;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  color: var(--color-title-primary);
+  font-family: "Dancing Script", "Helvetica Neue", cursive;
+  // background: url(../../static/images/banner_bg.jpeg) no-repeat;
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    @media (max-width: 600px) {
+      font-size: 20px;
+    }
+  }
+  h4 {
+    margin-top: 12px;
+    font-size: 15px;
+    text-align: right;
+    @media (max-width: 600px) {
+      font-size: 12px;
+    }
+  }
+  @include tablet {
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .bottom__img {
+    position: absolute;
+    bottom: 0;
+    & > span {
+      & span {
+        width: 100% !important;
+        height: 54px !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        min-height: unset !important;
+        max-height: unset !important;
+      }
+      & > img {
+        width: 100% !important;
+        height: auto !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        min-height: unset !important;
+        max-height: unset !important;
+      }
+    }
+  }
+}
+.img__wrapper {
+  flex: 3;
+  // padding: 0px 2px;
+  height: 280px;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+  cursor: pointer;
+  @media (max-width: 600px) {
+    height: 270px;
+  }
+}

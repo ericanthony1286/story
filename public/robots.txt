@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://truyenfun.vn
+
+# Sitemaps
+Sitemap: https://truyenfun.vn/sitemap.xml
+Sitemap: https://truyenfun.vn/cate-sitemap.xml
+Sitemap: https://truyenfun.vn/story-sitemap.xml

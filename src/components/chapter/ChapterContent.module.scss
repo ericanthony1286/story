@@ -1,0 +1,115 @@
+@import "../../styles/responsive.scss";
+.light__theme {
+  background: var(--light-page-bg-color);
+  .breadcrumbs {
+    @include desktop {
+      display: none;
+    }
+  }
+  .container {
+    margin-top: 47px;
+    @include mobile {
+      margin-top: 50px;
+    }
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    @include mobile {
+      margin-top: 20px;
+    }
+  }
+  .section__title {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 1px;
+    @include mobile {
+      height: 80px;
+    }
+    & h4 {
+      font-size: 20px;
+      color: var(--color-title-primary);
+      border-bottom: 2px solid #2596be;
+      @include mobile {
+        border-bottom: none;
+      }
+      @include tablet {
+        border-bottom: none;
+      }
+    }
+  }
+  .chapter__content {
+    font-size: 16px;
+    color: var(--color-title-primary);
+    margin-bottom: 2rem;
+  }
+  .note {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #01a7ff;
+    margin-bottom: 1rem;
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: var(--color-title-primary);
+    cursor: pointer;
+    padding: 2px 6px;
+    border: none;
+    border-radius: 3px;
+    & .button__arrow {
+      font-size: 1.2rem;
+      color: var(--color-title-primary);
+      opacity: 0.3;
+    }
+    &:hover {
+      background: #01a7ff;
+      color: #fff;
+      & .button__arrow {
+        color: #fff;
+      }
+    }
+    &:disabled {
+      cursor: default;
+      background-color: #dfe7f3;
+      color: unset;
+      & .button__arrow {
+        color: initial;
+      }
+    }
+  }
+}
+
+.dark__theme {
+  @extend .light__theme;
+  background: var(--dark-section-bg-color);
+
+  .section__title h4 {
+    color: var(--color-blue);
+  }
+  .chapter__content {
+    color: var(--color-secondary);
+  }
+  .btn {
+    background: var(--color-secondary);
+    &:disabled {
+      background-color: #91b3e7;
+    }
+  }
+}

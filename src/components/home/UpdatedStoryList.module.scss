@@ -1,0 +1,116 @@
+@import "../../styles/responsive.scss";
+.light__theme {
+  background: var(--light-section-bg-color);
+  .summary {
+    color: var(--color-title-primary);
+    & .info {
+      display: inline-block;
+      width: 60px;
+      // margin-right: 5px;
+      color: #01a7ff;
+    }
+    & span {
+      margin-top: 4px;
+    }
+    &__content {
+      margin-top: 6px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    border-bottom: 1px solid rgba(37, 150, 190, 0.3);
+
+    & select {
+      outline: none;
+      background-color: transparent;
+      color: #001865;
+      padding: 4px 4px;
+      text-align: center;
+      border: 1.5px solid rgba(37, 150, 190, 0.2);
+      border-radius: 3px;
+      margin-bottom: 2px;
+    }
+    & .form {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+      margin-bottom: 2px;
+      background-color: transparent;
+      border: 1.5px solid rgba(37, 150, 190, 0.2);
+      border-radius: 3px;
+      padding: 0 5px;
+      & input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: var(--color-title-primary);
+      }
+    }
+  }
+  .top__story-desc {
+    display: flex;
+
+    gap: 10px;
+    margin-bottom: 10px;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  .img__container {
+    width: 60%;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.2s;
+    @include mobile {
+      width: 100%;
+      height: 180px;
+    }
+    @include tablet {
+      width: 40%;
+      height: 220px;
+    }
+    & span {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    &:hover {
+      scale: 1.1;
+    }
+  }
+  .top__story-title {
+    width: 60%;
+    @include mobile {
+      width: 100%;
+    }
+  }
+  .story__list {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+  .story__list-mobile {
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .btn {
+    color: #01a7ff;
+    cursor: pointer;
+  }
+}
+
+.dark__theme {
+  @extend .light__theme;
+  background: var(--dark-section-bg-color);
+  h4,
+  .summary {
+    color: var(--color-secondary);
+  }
+}

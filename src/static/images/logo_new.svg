@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223" height="46.472" viewBox="0 0 223 46.472">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.075" y1="-0.084" x2="1.049" y2="0.861" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#01a7ff"/>
+      <stop offset="1" stop-color="#00d0ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="24.552" y1="-0.112" x2="25.676" y2="0.831" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="0.51" y1="-0.228" x2="0.494" y2="0.982" gradientUnits="objectBoundingBox">
+      <stop offset="0.006" stop-color="#0163ff" stop-opacity="0.502"/>
+      <stop offset="1" stop-color="#00d0ff" stop-opacity="0.502"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="15.28" y1="-0.29" x2="15.264" y2="0.909" gradientUnits="objectBoundingBox">
+      <stop offset="0.006" stop-color="#0163ff" stop-opacity="0.502"/>
+      <stop offset="1" stop-color="#00d0ff" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="0.516" y1="-0.246" x2="0.497" y2="0.978" gradientUnits="objectBoundingBox">
+      <stop offset="0.006" stop-color="#00b5ff" stop-opacity="0.302"/>
+      <stop offset="0.346" stop-color="#008fff" stop-opacity="0.353"/>
+      <stop offset="0.986" stop-color="#002dff" stop-opacity="0.498"/>
+      <stop offset="0.994" stop-color="#002cff" stop-opacity="0.502"/>
+    </linearGradient>
+  </defs>
+  <g id="logo" transform="translate(-87.393 -73.828)">
+    <g id="Group_1" data-name="Group 1" transform="translate(87.393 73.828)">
+      <path id="Path_1" data-name="Path 1" d="M87.393,79.194l28.93,5.49v37.377h-3.168l-20.695-7.813Z" transform="translate(-87.393 -75.589)" fill="url(#linear-gradient)"/>
+      <path id="Path_2" data-name="Path 2" d="M159.37,79.079l-28.916,5.567.1,37.377,3.168-.008,20.674-7.868Z" transform="translate(-101.524 -75.552)" fill="url(#linear-gradient-2)"/>
+      <path id="Path_3" data-name="Path 3" d="M87.483,76.371l28.938,7.407L87.472,78.272Z" transform="translate(-87.419 -74.663)" fill="#bff4ff"/>
+      <path id="Path_4" data-name="Path 4" d="M88.965,73.85l27.878,9.092L88.965,75.8Z" transform="translate(-87.909 -73.836)" fill="#89e6ff"/>
+      <path id="Path_5" data-name="Path 5" d="M159.3,76.186l-28.868,7.532,28.906-5.631Z" transform="translate(-101.517 -74.602)" fill="#bff4ff"/>
+      <path id="Path_6" data-name="Path 6" d="M157.963,73.828l-27.531,9.116,27.563-7.165Z" transform="translate(-101.517 -73.828)" fill="#89e6ff"/>
+      <path id="Path_7" data-name="Path 7" d="M87.393,79.194l53,35.265-47.936-.211Z" transform="translate(-87.393 -75.589)" fill="url(#linear-gradient-3)"/>
+      <path id="Path_8" data-name="Path 8" d="M147.7,79.049l-52.781,35.6,47.933-.512Z" transform="translate(-89.862 -75.542)" fill="url(#linear-gradient-4)"/>
+      <path id="Path_9" data-name="Path 9" d="M94.308,117.141l24.285-29.775,24.073,29.775-20.484,7.6H115Z" transform="translate(-89.663 -78.271)" fill="url(#linear-gradient-5)"/>
+      <path id="Path_10" data-name="Path 10" d="M128.7,87.366l-3.59,37.377h6.969Z" transform="translate(-99.771 -78.271)" fill="#0063ff"/>
+    </g>
+    <text id="TruyenFun.vn" transform="translate(149.393 94.828)" fill="#fff" font-size="21" font-family="Helvetica"><tspan x="0" y="0">TruyenFun.vn</tspan></text>
+    <text id="Thế_giới_trong_tầm_tay_bạn" data-name="Thế giới trong tầm tay bạn" transform="translate(148.393 111.977)" fill="#01a7ff" font-size="11" font-family="Verdana-Italic, Verdana" font-style="italic" letter-spacing="0.05em"><tspan x="0" y="0">Thế giới trong tầm tay bạn</tspan></text>
+  </g>
+</svg>
